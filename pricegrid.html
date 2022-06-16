@@ -1,111 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .grid{
-            width: 60%;
-            height: 30vw;
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.min.css">
+    <title></title>
+    <style media="screen">
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
             position: relative;
-            top: 3vw;
-            left: 10vw;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto;
-            justify-content: center;
-            align-content: center;
-            
+            top: 10vw;
+            background-color:coral; 
+            height: 40vw;
+            overflow: scroll;
         }
-        .item1{
-            grid-column: 1/2;
-            color: skyblue;
-        }
-        .item2{
-            grid-column: 2/3;
-        }
-       
-        @media screen and (max-width:850px){
-            .grid{
-            width: 60%;
-            height: 50vw;
+        #learn{
             position: relative;
-            top: 4vw;
-            left: 10vw;
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto auto;
-            justify-content: center;
-            align-content: center;
-            
+            top: 9vw;
+            left: 4vw;
+            color: white;
         }
-        .item1{
-            grid-column: 1/2;
+        #form{
+            position: relative;
+            top: 5vw;
         }
-        .item2{
-            grid-column: 1/2;
+        h5{
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: blue;
+            text-align: center;
+            height: 4.5vw;
+            color: white;
         }
-        img{
-            padding-top: 20px;
+        button{
+            border: 1px solid limegreen;
+            background-color: limegreen;
+            width: 30vw;
+            height: 3vw;
         }
+        button:hover{
+            background-color: aquamarine;
+            height: 5vw;
         }
-        @media screen and (max-width:650px){
-            .grid{
-                top:20vw;
-            }
-            img{
-            width: 100%;
-            height: 45vw;
+        a{
+            color: brown;
+            text-decoration: none;
         }
-        }
-        @media screen and (max-width:720px) {
-            .grid{
-                top:25vw;
-            }
-            img{
-            width: 100%;
-            height: 45vw;
-        }
-        }
-        @media screen and (max-width:420px) {
-            .grid{
-                top:25vw;
-                left:5vw;
-            }
-            img{
-            width: 100%;
-            height: 45vw;
-        }
-        }
+    
     </style>
-</head>
-<body>
-    <section class="grid">
-        <div class="item1">
-            <h2>W E`R E<br/><b style="color: black;">COMING <br/>SOON</b></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolo
-                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec
-            </p>
-            <form action="" onsubmit="return validate()">
-                <input type="email" name="email" id="email" placeholder="enter your email address" 
-                style=" border-radius: 10px; color:rgb(35, 5, 83);"required/>
-                <span><input type="submit" value="login" style="background-color: skyblue; border-radius:10px" /></span>
-            </form>
-        </div>
-        <div class="item2">
-            <img src="cam4.webp" alt="picture of a camera man">
-        </div>
+  </head>
+  <body>
+    <section class="container">
+      <article class="row">
+        <section class="col col-md-6 col-xs-6" id="learn">
+          <h1>Learn to code by <br>watching others</h1>
+          <p>See how experienced developer solve problems in real-time<br>
+            Watching scripted tutorial is great, but understanding how <br>
+            think is invaluable
+        </p>
+        </section>
+        <section class="col col-md-6 col-xs-6" id="form">
+          <h5>Try it free 7days then $20/mo. thereafter</h5>
+          <div class="card">
+            <div class="card-body">
+              <form class="" action="index.html" method="post" onsubmit="return validate()">
+                <div class="form-foloating">
+                    <input type="text" class="form-control" id="firstname" placeholder="Firstname" required/>
+                  </div><br>
+                    <div class="form-foloating">
+                    <input type="text" class="form-control" id="lastname" placeholder="Lastname" required/>
+                  </div><br>
+                 <div class="form-foloating">
+                    <input type="email" class="form-control" id="email" placeholder="email address" required/>
+                </div><br>
+                   <div class="form-foloating">
+                    <input type="password" class="form-control" id="pswd" placeholder="password" max='10'/>
+                  </div><br>
+                    <div class="form-foloating">
+                        <input type="submit"  id="submit" class="btn btn-success" value="Claim Your Free trial now">
+                  </div><br>
+              </form>
+                <div class="card-text">By submitting this form, you are agreeing to the <a href="#" class='card-link'>Terms and Conditions</a></div>
+            </div>
+          </div>
+
+        </section>
+      </article>
     </section>
-   <script>
-       function validate(){
-           var email=document.getElementById("email").value;
-           if(email===""){
-               alert("You have not typed in your email address");
-               return false;
-           }
-       }
-   </script> 
-</body>
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js" charset="utf-8"></script>
+      <script>
+          function validate(){
+              var first=document.getElementById("firstname").value;
+              var last=document.getElementById("lastname").value;
+              if(first==""){
+                  alert("Fill in your firstname")
+                  return false;
+              }
+          }
+      </script>
+  </body>
 </html>
