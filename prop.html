@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="prop.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3 id="logo">INSURE</h3>
+        <button class="material-icons"  onclick="toggle()">menu</button>
+        <div class="navmenu" id="icon">
+        <ul class="navul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#"><button class="login">login</button></a></li>
+        </ul>
+    </div>
+      </nav>
+      <section id="bgphoto" class="flex-con">
+        <article class="item1">
+              <h3>HUMANIZING<br>YOUR INSURANCE.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec
+                  Lorem ipsum <br>dolor sit amet, 
+            laborum.
+            </p>
+              <p><button id="getnow">START NOW</button></p>
+          </article>
+          <article class="item2">
+              <img src="img/fash2.jpg" style="max-width: 40vw; min-height: 50vh;">
+          </article>
+      </section>
+    </header>
+    <main>
+        <h2>We&apos;re different</h2>
+        <div class="grid-con">
+        <article>
+            <div><img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\golang.svg"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec
+                  Lorem ipsum <br>dolor sit amet, 
+            laborum.</p>
+        </article>
+        <article>
+             <div><img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\github.svg"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec
+                  Lorem ipsum <br>dolor sit amet, 
+            laborum.</p>
+        </article>
+        <article>
+             <div><img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\edge.svg"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec
+                  Lorem ipsum <br>dolor sit amet, 
+            laborum.</p>
+        </article>
+    </div>
+    </main>
+    <aside>
+        <form>
+            <textarea rows="2" cols="30" placeholder="leave your comment"></textarea>
+        </form>
+    </aside>
+    <footer>
+        <h5>
+        <span>CONTACT US</span>
+        <img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\facebook.svg" width="20px" min-height="20px">
+        <img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\instagram.svg" width="20px" min-height="20px">
+        <img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\pinterest.svg" width="20px" min-height="20px">
+        <img src="fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\svgs\brands\twitter.svg" width="20px" min-height="20px">
+    </h5>
+    <section>
+        <p>isicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec</p>
+        <p>isicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec</p>
+        <p>isicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec</p>
+        <p>isicing elit. <br>Ipsam dolo
+                re, cumque beatae dolorem reiciendis consectetur quasi veritatis! Delec</p>
+    </section>
+    </footer>
+    <script type="text/javascript">
+        function toggle(){
+            var menu=document.querySelector('#icon');
+            if(menu.className=='navmenu'){
+                menu.className+="responsive";
+            }
+            else{
+                menu.className="navmenu"
+            }
+        }
+    </script>
+  </body>
+</html>

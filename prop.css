@@ -1,0 +1,224 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#logo{
+	font: italic 900;
+	position: relative;
+	top: 3vw;
+	left: 10vw;
+}
+.material-icons{
+	width: 12ch;
+	height: 30px;
+	border-radius:10px ;
+	background-color:skyblue;
+	position: relative;
+	top: -1vw;
+	left: 70vw;
+}
+button:hover{
+	width: 12ch;
+	height: 30px;
+	background-color: transparent;
+	font-size: 1rem;
+}
+nav ul{
+	position: relative;
+	left: 70vw;
+	width: 15ch;
+	border: 1px solid beige;
+	border-radius: 10px;
+	background-color: teal;
+}
+nav ul li{
+	list-style-type: none;
+	margin-top: 10px;
+	text-align: center;
+}
+nav a{
+	text-decoration: none;
+	color: black;
+}
+ .login{
+	background-color: skyblue;
+	border-radius: 10px;
+	width: 7ch;
+}
+.navmenu {
+	display: none;
+}
+.navmenu.responsive ul{
+	display: block;
+}
+/*this is the end of the navbar
+*/
+.flex-con{
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	padding: 5px;
+	background-image:linear-gradient(45deg,skyblue,burlywood,gold);
+}
+.item1{
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+.item1 h3{
+	font-size: 4vw;
+}
+.item1 button{
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+	background-color:skyblue ;
+	width: 30vw;
+	height: 10vw;
+	position: relative;
+	top: 5vw;
+}
+.item2{
+	position: relative;
+	top: 9vw;
+	left: 30vw;
+}
+/*end of header*/
+main{
+	position: relative;
+	top: 10vw;
+	margin: 10px;
+	padding: 10px;
+	color: teal;
+}
+main h2{
+	color: darkgrey;
+	font: 900 oblique;
+}
+main img{
+	max-width: 50px;
+	min-height: 40px;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+aside{
+	position: relative;
+	margin: 10vw;
+	background-image:linear-gradient(45deg,skyblue,burlywood,gold) ;
+	min-height: 30vh;
+}
+aside textarea{
+	position: relative;
+	top: 15vw;
+	left: 15vw;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid teal;
+	border-radius: 2px;
+	box-shadow: 0 5px 10px 0 gray,0 5px 10px 0 grey;
+}
+footer{
+	background-image: linear-gradient(135deg,grey,gray,beige);
+}
+footer h5 span{
+	padding-left: 20px;
+	margin: 10px;
+	font-style: oblique;
+	font-weight: 900;
+	font-size: 1rem;
+}
+footer h5 img{
+	position: relative;
+	left: 40vw;
+	padding-left: 1vw;
+}
+footer section{
+	color: teal;
+	padding-left: 20px;
+	margin: 10px;
+	font-style: italic;
+	font-weight: 900;
+}
+@media screen and (min-width: 40em){
+	.material-icons{
+		display: none;
+	}
+	.navmenu {
+		display:block;
+	}
+	nav ul {
+		border: none;
+		background-color: transparent;
+		width: 75%;
+		left: 50vw;
+	}
+	nav ul li{
+		display: inline-block;
+		padding-left: 10px;
+		margin: 10px;
+	}
+	/*end ofnavbar
+	*/
+	.flex-con{
+	display: flex;
+	min-height: 40vh;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	flex: column wrap;
+}
+.item1 button{
+	top: -2px;
+	width: 18vw;
+}
+.item2{
+	left:-1vw;
+}
+.grid-con{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+}
+aside textarea{
+	top: 20px;
+	left: 20px;
+}
+footer section{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	font-size: 1rem;
+}
+footer h5 img{
+	width: 45px;
+	left: 50vw;
+}
+}
+@media screen and (min-width: 60em){
+	nav ul li {
+		padding-left: 30px;
+	}
+	.item1 button{
+		width: 10vw;
+		height: 5vw;
+		top: -1px;
+	}
+	.item1 h3{
+		font-size: 2rem;
+	}
+	.item2{
+		flex-basis: 200px;
+	}
+	aside{
+		top: 3vw;
+	}
+	footer h5 img{
+		width: 50px;
+		left: 70vw;
+	}
+}
+
+
+
+
+
